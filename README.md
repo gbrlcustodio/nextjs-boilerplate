@@ -37,6 +37,8 @@ The basic project structure follows the hierarchy presented bellow and it's not 
 |   +-- logo.png
 +-- components/                         # Shared components
 |   +-- Button.tsx
++-- hooks/                              # Shareable state logics
+|   +-- useDeviceType.ts
 +-- layouts/                            # Layout specific
 |   +-- Authenticated.tsx
 |   +-- Unauthenticated.tsx
