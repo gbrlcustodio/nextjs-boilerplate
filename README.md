@@ -27,6 +27,25 @@ npm run dev
 
 This project contains a `.vscode` directory witch contains settings and extensions to work with `Visual Studio Code` using the recommended configurations.
 
+## Directory structure
+
+The basic project structure follows the hierarchy presented bellow and it's not but a suggestion, change it as you find necessary.
+
+```
+.
++-- assets/                             # Static files
+|   +-- logo.png
++-- components/                         # Shared components
+|   +-- Button.tsx
++-- layouts/                            # Layout specific
+|   +-- Authenticated.tsx
+|   +-- Unauthenticated.tsx
++-- pages/                              # Aplication pages
+|   +-- Home.tsx
++-- types/                              # Types descriptions
+|-- +-- device.ts
+```
+
 ## Building
 
 This boilerplate includes docker support, if that is what you wish, create an image by running `docker build .` or `npm run build` if your build process doesn't requires docker.
