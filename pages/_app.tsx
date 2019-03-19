@@ -26,7 +26,10 @@ class NextApplication extends App {
         <Head>
           <title>Next.js Boilerplate</title>
         </Head>
-        <JssProvider>
+        <JssProvider
+          registry={this.pageContext.sheetsRegistry}
+          generateClassName={this.pageContext.generateClassName}
+        >
           <MuiThemeProvider
             theme={this.pageContext.theme}
             sheetsManager={this.pageContext.sheetsManager}
